@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/l-burrell/SocialNetworkingApp/issues"
   },
-  "homepage": "https://github.com/l-burrell/SocialNetworkingApp#readme"
+  "homepage": "https://github.com/l-burrell/SocialNetworkingApp#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
