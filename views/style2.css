@@ -1,0 +1,114 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+ 
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display:flex;
+    width:90%;
+    height:10vh;
+    margin:auto;
+    align-items:center;
+   
+}
+.logo-container{
+    display:flex;
+}
+.logo-container img{
+    width:100px;
+    height:100px;
+    
+}
+.search-bar-container img{
+   padding: 0px 0px 0px 20px;
+}
+.search-bar-container{
+    flex:1;
+    z-index:-1;
+}
+.search-container img{
+    width:40px;
+    height:50px;
+    position:absolute;
+    left:490px;
+    top:15px;
+}
+h1{
+    
+    color:#59906C;
+    padding:120px 0px 10px 275px;
+
+}
+.login-text {
+    display:flex;
+    margin-top:30px;
+    margin-left:100px;
+    padding-left:20px;
+    font-weight: bold;
+    
+    
+   
+}
+.green{
+    color:#59906C;
+    background:none;
+   
+    
+}
+.pink{
+    color:#CA0061;
+    font-weight:bold;
+    background:none;
+    padding-left: 100px;
+    margin-left:20px;
+   
+  
+}
+.email-text{
+    position:relative;
+    top:100px;
+    padding-top:50px;
+    margin-left:20px;
+    padding-left:100px;
+
+}
+.email-text p{
+    font-weight:bold;
+}
+.password-text{
+    position:relative;
+    margin-top:50px;
+    padding-top:50px;
+    top:25px;
+    padding-left: 100px;
+    margin-left:20px;
+}
+.password-text p{
+    font-weight: bold;
+}
+.login-button{
+    
+    margin-top:70px;
+    margin-left:250px;
+    padding:20px;
+    border-radius:25px;
+    border: solid #59906C;
+    text-align: justify;
+    background:#59906C ;
+    color:white;
+    height:25px;
+    width:100px;
+   
+}
+
+.friends {
+    padding-left:600px;
+    bottom:300px;
+    position:relative;
+    
+}
