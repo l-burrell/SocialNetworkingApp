@@ -1,6 +1,13 @@
-const express = require('express');
-const route = express.Router();
 
-route.get('', );
-
-module.exports = route;
+exports.home = (req, res) => {
+    res.send('home page')
+}
+exports.login = (req, res) => {
+    res.send('login')
+}
+exports.register = (req, res) => {
+    res.send('register')
+}
+exports.events = (req, res) => {
+    res.send('events')
+}
