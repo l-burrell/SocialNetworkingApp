@@ -56,6 +56,10 @@ const eventSchema = new mongoose.Schema({
     images: Array,
     list_of_sponsors: Array,
     associated_account: mongoose.ObjectId,
+    date: {
+        type: Date,
+        required: true,
+    },
 });
 
 // models are used by the controller

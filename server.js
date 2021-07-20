@@ -8,9 +8,16 @@ const handleServices = require('./routes/client')
 dot.config({path: 'config.env'})
 const port = process.env.PORT || 9000;
 
+// require the database we created
+const connectDB = require('./database/database');
+
+// mongodb connection
+connectDB();
+
 // register view engine
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+app.use(express.urlencoded({extended: true}));
 
 app.use('/', handleServices);
 app.use('/api/events', handleEvents);
