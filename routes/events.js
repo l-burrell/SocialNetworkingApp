@@ -4,4 +4,10 @@ const eventsController = require('../controllers/events');
 
 route.get('/', eventsController.locateEvent);
 
+route.post('/', eventsController.addEvent);
+
+route.put('/:id', eventsController.updateEvent);
+
+route.delete('/:id', eventsController.deleteEvent);
+
 module.exports = route;

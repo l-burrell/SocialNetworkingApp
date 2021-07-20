@@ -10,6 +10,7 @@ exports.addAccount = (req, res) => {
 exports.updateAccount = (req, res) => {
     res.send('hellou')
 }
+
 exports.deleteAccount = (req, res) => {
     res.send('hellod')
 }
