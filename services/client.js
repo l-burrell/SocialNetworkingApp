@@ -7,6 +7,10 @@ exports.login = (req, res) => {
     res.render('login')
 }
 
+exports.logged = (req, res) => {
+    res.render('logged')
+}
+
 exports.register = (req, res) => {
     res.render('register')
 }
