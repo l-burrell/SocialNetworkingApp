@@ -1,13 +1,16 @@
 
 exports.home = (req, res) => {
-    res.send('home page')
+    res.render('index');
 }
+
 exports.login = (req, res) => {
-    res.send('login')
+    res.render('login')
 }
+
 exports.register = (req, res) => {
-    res.send('register')
+    res.render('register')
 }
+
 exports.events = (req, res) => {
-    res.send('events')
+    res.render('events')
 }
