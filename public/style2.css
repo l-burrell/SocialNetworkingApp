@@ -1,114 +1,100 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
- 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-header{
-    display:flex;
-    width:90%;
-    height:10vh;
-    margin:auto;
-    align-items:center;
-   
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
 }
-.logo-container{
-    display:flex;
+.logo-container {
+  display: flex;
 }
-.logo-container img{
-    width:100px;
-    height:100px;
-    
+.logo-container img {
+  width: 100px;
+  height: 100px;
 }
-.search-bar-container img{
-   padding: 0px 0px 0px 20px;
+.search-bar-container img {
+  padding: 0px 0px 0px 20px;
 }
-.search-bar-container{
-    flex:1;
-    z-index:-1;
+.search-bar-container {
+  flex: 1;
+  z-index: -1;
 }
-.search-container img{
-    width:40px;
-    height:50px;
-    position:absolute;
-    left:490px;
-    top:15px;
+.search-container img {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  left: 510px;
+  top: 20px;
 }
-h1{
-    
-    color:#59906C;
-    padding:120px 0px 10px 275px;
-
+h1 {
+  color: #2c6241;
+  padding: 120px 0px 10px 275px;
 }
 .login-text {
-    display:flex;
-    margin-top:30px;
-    margin-left:100px;
-    padding-left:20px;
-    font-weight: bold;
-    
-    
-   
+  display: flex;
+  margin-top: 30px;
+  margin-left: 100px;
+  padding-left: 20px;
+  font-weight: bold;
 }
-.green{
-    color:#59906C;
-    background:none;
-   
-    
+.green {
+  color: #59906c;
+  background: none;
 }
-.pink{
-    color:#CA0061;
-    font-weight:bold;
-    background:none;
-    padding-left: 100px;
-    margin-left:20px;
-   
-  
+.pink {
+  color: #ca0061;
+  font-weight: bold;
+  background: none;
+  padding-left: 100px;
+  margin-left: 20px;
 }
-.email-text{
-    position:relative;
-    top:100px;
-    padding-top:50px;
-    margin-left:20px;
-    padding-left:100px;
-
+.email-text {
+  position: relative;
+  top: 100px;
+  padding-top: 50px;
+  margin-left: 20px;
+  padding-left: 100px;
 }
-.email-text p{
-    font-weight:bold;
+.email-text p {
+  font-weight: bold;
 }
-.password-text{
-    position:relative;
-    margin-top:50px;
-    padding-top:50px;
-    top:25px;
-    padding-left: 100px;
-    margin-left:20px;
+.password-text {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 50px;
+  top: 25px;
+  padding-left: 100px;
+  margin-left: 20px;
 }
-.password-text p{
-    font-weight: bold;
+.password-text p {
+  font-weight: bold;
 }
-.login-button{
-    
-    margin-top:70px;
-    margin-left:250px;
-    padding:20px;
-    border-radius:25px;
-    border: solid #59906C;
-    text-align: justify;
-    background:#59906C ;
-    color:white;
-    height:25px;
-    width:100px;
-   
+.login-button {
+  margin-top: 70px;
+  margin-left: 250px;
+  border-radius: 10px;
+  border: solid #59906c;
+  text-align: center;
+  background: #59906c;
+  color: white;
+  line-height: 35px;
+  height: 40px;
+  width: 100px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .friends {
-    padding-left:600px;
-    bottom:300px;
-    position:relative;
-    
+  padding-left: 800px;
+  bottom: 500px;
+  position: relative;
 }
