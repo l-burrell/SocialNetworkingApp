@@ -19,10 +19,10 @@ exports.signup = (req, res) => {
     res.render('signup')
 }
 
-exports.search = (req, res) => {
-    res.render('search')
-}
-
 exports.events = (req, res) => {
-    res.render('events')
+    if(req.query.id){
+        res.render("eventprofile")
+    } else {
+        res.render('events')
+    }
 }

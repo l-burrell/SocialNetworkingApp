@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <link rel="stylesheet" href="./styleE.css" />
+    <link rel="stylesheet" href="./styleSearch.css" />
     <title> Kommunity</title>
     <link rel ="icon" href = "./images/icon.svg" />
 </head>
@@ -21,62 +21,70 @@
       </div>
       <nav>
           <ul class="nav-links">
-              <li> <a class="nav-link1" href="#">Organize</a> </li>
               <li> <a href="./logged.html" class="nav-link2" href="#">Login</a> </li>
               <li> <a class="nav-link3" href="#">Sign Up</a> </li>
           </ul>
-
       </nav>
       </header>
       <main>
-          <div class="body-border">
-              <img class="exercise" src="./images/exercise.svg" alt="exercise"/>
-           <div class="book-section">
-               <h2>JULY 10</h2>
-               <h3>Bootcamp 101</h3>
-               <p>BY Bootcamp enthusiast</p>
-               <p>AT <a href="http://maps.google.com/?q=6538 11th Ave NW, Seattle, WA">6538 11th Ave NW, Seattle, WA</a></p>
-               <h4> Book </h4>
-           </div>
-           <div class="details-section">
-               <h2>Details</h2>
-               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus sagittis cursus est bibendum. Fringilla euismod tempus amet sed lacus. Libero etiam quis nullam eu. Lacus donec volutpat maecenas quam tempus, fringilla est facilisis mauris. Duis at amet, in imperdiet ut enim auctor curabitur sit.
-                Ultricies condimentum velit, vulputate maecenas. Orci aliquet volutpat ipsum, vel. In pharetra turpis cursus egestas consectetur et ultricies. Diam egestas pellentesque pretium ultricies amet integer viverra fermentum dui. Mauris lobortis donec nec phasellus volutpat, elit. Odio massa lectus turpis purus aliquet suspendisse cras. Est risus commodo sed nec morbi ipsum, tortor est amet. Iaculis imperdiet vitae aliquam ornare. Auctor vitae iaculis erat viverra aenean ligula convallis turpis gravida. Eget quam hendrerit turpis netus lorem eu ultricies eget. Sapien tellus enim, aliquam orci, suscipit non. Ultricies venenatis sollicitudin egestas blandit ipsum, et lectus massa auctor. Ultrices facilisis magna pellentesque ultrices dis. Nunc, dolor iaculis amet, tellus arcu purus elit ornare. Feugiat dignissim magna fermentum venenatis platea enim, eget a.
-                Eget nulla quis facilisi ut nascetur fermentum scelerisque. Neque lorem nunc vel, elementum. Sed eget aenean diam nunc quam. Eget at quam suspendisse risus in blandit cras tellus. Interdum viverra risus velit faucibus felis nec euismod lacus semper. Congue vel pretium vitae nunc vitae.
-                Diam urna viverra tortor et integer. Sed diam nulla viverra tristique ut ultricies egestas pretium. Nisl lorem nisl, sit est non natoque pharetra sit. Interdum sit enim placerat nunc nec. Et tortor eros, etiam vel tempus quis. Vitae congue sit donec semper aliquam. Lectus eget cras pretium, nibh ac eu urna, aenean. In sed risus convallis tristique odio mauris. Consequat viverra integer vitae quis amet, nunc fusce tincidunt. Sollicitudin parturient sed elit fermentum dolor pharetra turpis. Faucibus et in nam convallis semper pretium.
-               </p>
-           </div>
-           <div class="location">
-               <img class="map" src="./images/location.svg" alt="location map"/>
-            <h4>Sports & Fitness</h4>
+        <div class="dropdown">
+            <h3 class="first"> Filter By:</h3>
+            <div class="date">
+            <button>Date</button>
+                <ul>
+                    <li><a href="#">Today</a></li>
+                    <li><a href="#">Tommorow</a></li>
+                    <li><a href="#">This week</a></li>
+                    <li><a href="#">This weekend</a></li>
+                    <li><a href="#">Next week</a></li>
+                    <li><a href="#">Custom</a></li>
+                </ul>
+              </div>
+              <div class="distance">
+            <button>Distance</button>
+                <ul>
+                    <li><a href="#">2 miles</a></li>
+                    <li><a href="#">5 miles</a></li>
+                    <li><a href="#">10 miles</a></li>
+                    <li><a href="#">15 miles</a></li>
+                    <li><a href="#">20 miles</a></li>
+                    <li><a href="#">Custom</a></li>
+                </ul>
+              </div>
+              <div class="format">
+                <button>Format</button>
+                <ul>
+                    <li><a href="#">In Person</a></li>
+                    <li><a href="#">Virtual</a></li>
+                    
+                </ul>
+              </div>
+            
+            
+          
+            
+        </div>
+       
+          <div class="yoga">
+            <h2 class="yoga1-title" > Beginner's Hatha Yoga</h2>
+            <h3 class="yoga1-date-time">WEDNESDAY, JULY 14 @ 9AM</h3>
+            <p class="yoga1-location">Gasworks Park , Seattle , WA</p>
+            <h3 class="yoga1-price">FREE</h3>
+            <img class="yoga1" src="./images/yoga1.svg" alt="yoga picture 1"/>
 
-           </div>
-           <div class="more-events">
-               <h2>More Events For You</h2> 
-               <img class="img1" src="./images/mountains.svg" alt="mountains pic"/>
-               <div class="overlay1">
-                <h2>JULY 31</h2>
-                <h3>Afternoon Picnic Party</h3>
-                <h4> BY Seattle Unfreeze</h4>
-                <h5>AT Diablo</h5>
-            </div>
-               <img class="img2" src="./images/public.svg" alt="public market pic"/>
-               <div class="overlay2">
-                <h2>JULY 31</h2>
-                <h3>Afternoon Picnic Party</h3>
-                <h4> BY Seattle Unfreeze</h4>
-                <h5>AT Diablo</h5>
-            </div>
-               <img class="img3" src="./images/volunteer.svg" alt="volunteer" />
-               <div class="overlay3">
-                <h2>JULY 31</h2>
-                <h3>Afternoon Picnic Party</h3>
-                <h4> BY Seattle Unfreeze</h4>
-                <h5>AT Diablo</h5>
-            </div>
-           </div>
+            <h2 class="yoga2-title" > Beginner's Hatha Yoga</h2>
+            <h3 class="yoga2-date-time">WEDNESDAY, JULY 14 @ 9AM</h3>
+            <p class="yoga2-location">Gasworks Park , Seattle , WA</p>
+            <h3 class="yoga2-price">FREE</h3>
+            <img class="yoga2" src="./images/yoga2.svg" alt="yoga picture 2"/>
+
+            <h2 class="yoga3-title" > Beginner's Hatha Yoga</h2>
+            <h3 class="yoga3-date-time">WEDNESDAY, JULY 14 @ 9AM</h3>
+            <p class="yoga3-location">Gasworks Park , Seattle , WA</p>
+            <h3 class="yoga3-price">FREE</h3>
+            <img class="yoga3"src="./images/yoga3.svg" alt="yoga picture 3"/>
           </div>
+         
       </main>
       </body>
       </html>

@@ -1,16 +1,16 @@
 
 exports.locateAccount = (req, res) => {
-    res.send('hello')
+    res.send('find account')
 }
 
 exports.addAccount = (req, res) => {
-    res.send('helloa')
+    res.send('add account')
 }
 
 exports.updateAccount = (req, res) => {
-    res.send('hellou')
+    res.send('update account')
 }
 
 exports.deleteAccount = (req, res) => {
-    res.send('hellod')
+    res.send('delete account')
 }
