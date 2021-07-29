@@ -21,8 +21,12 @@ exports.signup = (req, res) => {
 
 exports.events = (req, res) => {
     if(req.query.id){
-        res.render("eventprofile")
+        res.render("eventsprofile")
     } else {
         res.render('events')
     }
+}
+
+exports.eventsprofile = (req, res) => {
+    res.render("eventsprofile")
 }

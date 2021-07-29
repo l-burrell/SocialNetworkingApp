@@ -14,4 +14,6 @@ route.get('/signup', services.signup);
 
 route.get('/events', services.events);
 
+route.get('/eventsprofile', services.eventsprofile);
+
 module.exports = route;
