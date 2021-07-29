@@ -10,7 +10,7 @@ route.get('/logged', services.logged);
 
 route.get('/profile', services.profile); 
 
-route.get('/signup', services.signup);
+route.get('/register', services.signup);
 
 route.get('/events', services.events);
 

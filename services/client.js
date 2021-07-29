@@ -15,8 +15,8 @@ exports.profile = (req, res) => {
     res.render('profile')
 }
 
-exports.signup = (req, res) => {
-    res.render('signup')
+exports.register = (req, res) => {
+    res.render('register')
 }
 
 exports.events = (req, res) => {
