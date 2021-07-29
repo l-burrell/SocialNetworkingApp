@@ -1,0 +1,257 @@
+#searchBar{
+    background: #E8E8E8;
+    width: 340px;
+    height: 49.02px;
+    left: 130px;
+    top: 39px;
+}
+
+#signUp{
+    width: 110px;
+    height: 60px;
+    left: calc(50% - 0px/2 - 280px);
+    top: calc(50% - 60px/2 - 221px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    margin-top:5%;
+
+    color: #000000;
+}
+
+#alreadyPart{
+    width: 253px;
+    height: 40px;
+    left: 164px;
+    top: 242px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#login{
+    width: 120px;
+    height: 40px;
+    left: 470px;
+    top: 258px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    color: #CA0061;
+}
+
+#name{
+    width: 150px;
+    height: 50px;
+    left: 0px;
+    top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+#nameBar{
+    width: 400px;
+    height: 25px;
+    left: 0px;
+    top: 60px;
+
+    background: #E8E8E8;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+#emailAddress{
+    width: 200px;
+    height: 50px;
+    left: 0px;
+    top: 87px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+
+    color: #000000;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+#emailBar{
+    width: 400px;
+    height: 25px;
+    left: 0px;
+    top: 138px;
+
+    background: #E8E8E8;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+#password{
+    width: 135px;
+    height: 50px;
+    left: 0px;
+    top: 164px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+
+    color: #000000;
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+#passwordBar{
+    width: 400px;
+    height: 25px;
+    left: 0px;
+    top: 215px;
+
+    background: #E8E8E8;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+#location{
+    width: 114px;
+    height: 30px;
+    left: 164px;
+    top: 578px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 4%;
+
+    color: #000000;
+}
+
+#locationBar{
+    width: 114px;
+    height: 29px;
+    left: 164px;
+    top: 608px;
+    margin:0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #2C6241;
+}
+
+#changeCity{
+    width: 100px;
+    height: 25px;
+    left: 262px;
+    top: 600px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    color: #CA0061;
+}
+
+#signUpButton{
+    width: 99.01px;
+    height: 40px;
+    left: 312px;
+    top: 706px;
+    margin-top:10%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    background: #2C6241;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+@media (max-width:992px){
+    #person{
+        display: none;
+    }
+}

@@ -6,9 +6,11 @@ route.get('/', services.home);
 
 route.get('/login', services.login);
 
-route.get('/logged', services.logged);
+route.get('/logged', services.logged); 
 
-route.get('/register', services.register);
+route.get('/profile', services.profile); 
+
+route.get('/signup', services.signup);
 
 route.get('/events', services.events);
 

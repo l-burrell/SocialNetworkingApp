@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/title.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg p-4 navbar-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href=""><img src="images/title.svg"></a>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+                <form class="d-flex ">
+                    <input class="form-control" id="searchBar" type="search">
+                    <button class="btn btn-outline-secondary" type="button" id="searchIcon"><img src="search.svg"></button>
+                </form>
+           
+            <ul class="navbar-nav ms-auto text-center ">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-dark" id="organizeButton">Organize</button>
+                </li>
+                <li class="nav-item">
+                    <p class="font-weight-bold" id="nameTag">Hello, John</p>
+                </li>                
+            </ul>  
+        </div>          
+    </nav>
+
+    <div class="container" id="bodyContainer">       
+        <p id="accountInformation">Your Account Information</p>       
+        <div class="row">
+            <hr id="accountLine">
+            <div class="col-lg-6">
+                <p id="name">Name:</p>
+                <input id="nameBar" type="text">
+                <p id="emailAddress">Email Address:</p>
+                <input id="emailBar" type="email">
+                <p id="password">Password:</p>
+                <input id="passwordBar" type="text">
+                <p id="location">Location:</p>
+                <div class="row align-items-center">
+                    <p id="locationBar">Seattle, WA</p>
+                    <button type="button" class="btn btn-outline-dark" id="changeCity">Change City</button>
+                </div>
+                <p id="biography">Bio:</p>
+                <textarea id="biographyBar"></textarea>
+            </div>
+            <div class="col-lg-6">
+                <p id="profilePicture">Profile Picture</p>
+                <div class="pcitureDiv">
+                    <img src="images/image 1.svg" id='stockImage' class="profileImg">
+                    <input type='file' id="photo" class='uploader' onchange="readURL(this);" accept="image/*">
+                    <label for="photo" type="button" class="btn btn-outline-dark" id="uploadPhoto">Upload your Photo</label>          
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="container">
+        <p id="interest">Your Interests</p> 
+        <hr id="interestLine">       
+        <div class="row">
+            <div class="interestChoices text-center col-lg-3 col-md-4">
+                <button type="button" id="firstInterest">Outdoors & Adventure</button>
+            </div> 
+            <div class="interestChoices text-center col-lg-3 col-md-4">
+                <button type="button" id="firstInterest">Health & Wellness</button>
+            </div>
+            <div class="interestChoices text-center col-lg-3 col-md-4"> 
+                <button type="button" id="firstInterest">Sports & Fitness</button>
+            </div>
+            <div class="interestChoices text-center col-lg-3 col-md-4">
+                <button type="button" id="firstInterest">Fashion & Beauty</button>
+            </div>
+            
+            <div id="addMoreButton">
+                <a href="#" id="addMore" data-bs-toggle="modal" data-bs-target="#firstModal">Add More Interests</a>
+            </div>
+            
+        </div>
+        </div>
+   
+    <div class="container-sm">
+        <div class="modal fade" id="firstModal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content border-0">                         
+                    <div class="modal-header border-0">
+                        <h1>What's Your Interest?</h1>
+                    </div>
+                    <div class="modal-body border-0">
+                        <div class="row">
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest" onclick="setColor('newInterest', '#101010')">Outdoors & Adventure</button>
+                            </div> 
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest1" onclick="setColor('newInterest1', '#101010')">Health & Wellness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6"> 
+                                <button type="button" id="newInterest2" onclick="setColor('newInterest2', '#101010')">Sports & Fitness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest3" onclick="setColor('newInterest3', '#101010')">Fashion & Beauty</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest4" onclick="setColor('newInterest4', '#101010')">Outdoors & Adventure</button>
+                            </div> 
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest5" onclick="setColor('newInterest5', '#101010')">Health & Wellness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6"> 
+                                <button type="button" id="newInterest6" onclick="setColor('newInterest6', '#101010')">Sports & Fitness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest7" onclick="setColor('newInterest7', '#101010')">Fashion & Beauty</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest8" onclick="setColor('newInterest8', '#101010')">Outdoors & Adventure</button>
+                            </div> 
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest9" onclick="setColor('newInterest9', '#101010')">Health & Wellness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6"> 
+                                <button type="button" id="newInterest10" onclick="setColor('newInterest10', '#101010')">Sports & Fitness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest11" onclick="setColor('newInterest11', '#101010')">Fashion & Beauty</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest12" onclick="setColor('newInterest12', '#101010')">Outdoors & Adventure</button>
+                            </div> 
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest13" onclick="setColor('newInterest13', '#101010')">Health & Wellness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6"> 
+                                <button type="button" id="newInterest14" onclick="setColor('newInterest14', '#101010')">Sports & Fitness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest15" onclick="setColor('newInterest15', '#101010')">Fashion & Beauty</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest16" onclick="setColor('newInterest16', '#101010')">Outdoors & Adventure</button>
+                            </div> 
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest17" onclick="setColor('newInterest17', '#101010')">Health & Wellness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6"> 
+                                <button type="button" id="newInterest18" onclick="setColor('newInterest18', '#101010')">Sports & Fitness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest19" onclick="setColor('newInterest19', '#101010')">Fashion & Beauty</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest20" onclick="setColor('newInterest20', '#101010')">Outdoors & Adventure</button>
+                            </div> 
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest21" onclick="setColor('newInterest21', '#101010')">Health & Wellness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6"> 
+                                <button type="button" id="newInterest22" onclick="setColor('newInterest22', '#101010')">Sports & Fitness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest23" onclick="setColor('newInterest23', '#101010')">Fashion & Beauty</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest24" onclick="setColor('newInterest24', '#101010')">Outdoors & Adventure</button>
+                            </div> 
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest25" onclick="setColor('newInterest25', '#101010')">Health & Wellness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6"> 
+                                <button type="button" id="newInterest26" onclick="setColor('newInterest26', '#101010')">Sports & Fitness</button>
+                            </div>
+                            <div class="interestChoices d-flex justify-content-md-center text-center col-lg-3 col-md-6">
+                                <button type="button" id="newInterest27" onclick="setColor('newInterest27', '#101010')">Fashion & Beauty</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                         <button class="btn m-lg-auto" data-bs-dismiss="modal" type="button" id="complete">Complete</button>
+                    </div>  
+                </div>
+            </div>              
+        </div>
+    </div>
+               
+    </div>
+
+</body>
+</html> 

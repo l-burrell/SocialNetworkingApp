@@ -11,8 +11,12 @@ exports.logged = (req, res) => {
     res.render('logged')
 }
 
-exports.register = (req, res) => {
-    res.render('register')
+exports.profile = (req, res) => {
+    res.render('profile')
+}
+
+exports.signup = (req, res) => {
+    res.render('signup')
 }
 
 exports.events = (req, res) => {
